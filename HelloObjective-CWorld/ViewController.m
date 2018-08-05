@@ -25,5 +25,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)clickBaitButton:(id)sender {
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Welcome" message:@"Welcome to the world of Objective-C" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *closeAction = [UIAlertAction actionWithTitle:@"CLOSE" style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:closeAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 @end
